@@ -41,6 +41,11 @@
 }
 
 @media screen and (max-width: 576px) {
+
+  .why_is_it_special_subtitle {
+    margin-bottom: 3.2rem;
+  }
+
   .why_is_it_special_content {
     display: flex;
     flex-direction: column;

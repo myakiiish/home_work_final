@@ -19,7 +19,7 @@
 .needles_origin_detalization {
   display: flex;
   justify-content: space-between;
-  padding: 0 32px 32px 0px;
+  padding: 0 0 32px 0px;
   gap: 3.2rem;
   color: var(--text-primary-inverted);
 }
@@ -31,7 +31,7 @@
 }
 
 .needles_origin_detalization_container {
-  padding: 0 32px;
+  padding: 0 32px 32px 32px;
   background-color: var(--dark);
 }
 
