@@ -1,0 +1,157 @@
+:root {
+  --text-primary: #2c2c2c;
+  --text-secondary: #262723;
+  --text-primary-inverted: #fffbf0;
+
+  --light-gray: #dedede;
+  --dark: #0b0a10;
+
+  --chocolate-lite: #c9c3af;
+  --chocolate-intense: #f1eddd;
+  --chocolate-dark: #a49f8e;
+
+  font-family: 'Noah Grotesque', sans-serif;
+  color: var(--text-primary);
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Noah Grotesque';
+  src: url('/src/assets/fonts/Noah_Grotesque_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noah Grotesque';
+  src: url('/src/assets/fonts/Noah_Grotesque_Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  /* font-size: 20px; */
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin-top: 2.4rem;
+}
+
+a {
+  font-weight: 300;
+  color: var(--chocolate-lite);
+}
+
+a:hover {
+  color: var(--text-primary-inverted);
+}
+
+a:visited {
+  color: var(--chocolate-dark);
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.4rem;
+  color: var(--chocolate-lite);
+  line-height: 4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+  color: var(--text-primary);
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.link {
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  border-bottom: 1px solid var(--chocolate-lite);
+  padding-bottom: 0.2rem;
+}
+
+.link:visited {
+  color: var(--text-primary);
+}
+
+.link:hover {
+  color: var(--text-secondary);
+}
+
+.link:hover .navigation_arrow {
+  animation: lightAppear 0.5s ease-out forwards;
+  visibility: visible;
+}
+
+.link .navigation_arrow {
+  animation: lightDisappear 0.5s ease-out forwards;
+}
+
+.navigation {
+  max-width: 380px;
+}
+
+@keyframes lightAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightDisappear {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}

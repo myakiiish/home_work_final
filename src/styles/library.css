@@ -1,0 +1,279 @@
+/* visible */
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row; /* Default */
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.padding_top_0 {
+  padding-top: 0;
+}
+
+.margin_top_0 {
+  margin-top: 0;
+}
+
+.margin_bottom_0 {
+  margin-bottom: 0;
+}
+
+/* 3. Flex Wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.justify-start {
+  justify-content: flex-start; /* Default */
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+
+/* 6. Align Content */
+.content-start {
+  align-content: flex-start;
+}
+.content-end {
+  align-content: flex-end;
+}
+.content-center {
+  align-content: center;
+}
+.content-between {
+  align-content: space-between;
+}
+.content-around {
+  align-content: space-around;
+}
+.content-stretch {
+  align-content: stretch; /* Default */
+}
+
+/* 7. Align Self */
+.self-auto {
+  align-self: auto; /* Default */
+}
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-center {
+  align-self: center;
+}
+.self-stretch {
+  align-self: stretch;
+}
+.self-baseline {
+  align-self: baseline;
+}
+
+.gap-0 {
+  gap: 0;
+}
+.gap-1 {
+  gap: 0.25rem; /* 4px */
+}
+.gap-2 {
+  gap: 0.5rem; /* 8px */
+}
+.gap-4 {
+  gap: 1rem; /* 16px */
+}
+.gap-8 {
+  gap: 2rem; /* 32px */
+}
+.gap-9 {
+  gap: 2.4rem;
+}
+
+.grow-0 {
+  gap: 2.4rem;
+}
+.grow {
+  flex-grow: 1;
+}
+
+/* 1. Grid Container */
+.grid {
+  display: grid;
+}
+
+/* 2. Grid Template Columns */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* 3. Grid Template Rows */
+.grid-rows-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+.grid-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid-rows-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+.grid-rows-6 {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/* 4. Grid Gap */
+.grid-gap-0 {
+  gap: 0;
+}
+.grid-gap-1 {
+  gap: 0.25rem; /* 4px */
+}
+.grid-gap-2 {
+  gap: 0.5rem; /* 8px */
+}
+.grid-gap-4 {
+  gap: 1rem; /* 16px */
+}
+.grid-gap-8 {
+  gap: 2rem; /* 32px */
+}
+
+/* 5. Grid Row/Column Span */
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+.row-span-4 {
+  grid-row: span 4 / span 4;
+}
+
+/* 6. Grid Auto Flow */
+.grid-flow-row {
+  grid-auto-flow: row; /* Default */
+}
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+.grid-flow-row-dense {
+  grid-auto-flow: row dense;
+}
+.grid-flow-col-dense {
+  grid-auto-flow: column dense;
+}
+
+/* 7. Grid Alignment */
+.place-content-center {
+  place-content: center;
+}
+.place-content-start {
+  place-content: start;
+}
+.place-content-end {
+  place-content: end;
+}
+.place-content-between {
+  place-content: space-between;
+}
+.place-content-around {
+  place-content: space-around;
+}
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.place-items-center {
+  place-items: center;
+}
+.place-items-start {
+  place-items: start;
+}
+.place-items-end {
+  place-items: end;
+}
+.place-items-stretch {
+  place-items: stretch;
+}

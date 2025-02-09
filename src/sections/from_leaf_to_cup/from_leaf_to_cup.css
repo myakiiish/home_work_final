@@ -1,0 +1,17 @@
+
+
+.from_leaf_to_cup_container {
+    width: 100%;
+}
+
+.from_leaf_to_cup_container_video {
+    height: 90vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .from_leaf_to_cup_container_video {
+      height: 40vh;
+
+    }
+  }

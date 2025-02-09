@@ -1,0 +1,75 @@
+.logo_image {
+  max-width: 310px;
+}
+
+.greeting_container {
+  background-color: var(--text-primary-inverted);
+}
+
+.body {
+  position: relative;
+}
+
+.caption_text_greeting {
+  width: 363px;
+  margin: 0;
+}
+
+.navigation_arrow_global {
+  position: fixed;
+
+  scroll-behavior: smooth;
+
+  bottom: 20px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+}
+
+.navigation_arrow_global:active {
+  background-color: transparent;
+}
+
+.navigation_arrow_global:hover {
+  background-color: transparent;
+}
+
+.greeting_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.greeting_main_content {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.dgeng {
+  width: 540px;
+}
+
+@media screen and (max-width: 576px) {
+  .caption_text_greeting {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.1rem;
+  }
+
+  .greeting_main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .greeting_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dgeng {
+    margin-top: 1.6rem;
+    width: 100%;
+  }
+}

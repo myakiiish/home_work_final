@@ -1,0 +1,117 @@
+.basic-container {
+  height: 100%;
+  padding: 32px;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.inverted-text {
+  color: var(--text-primary-inverted);
+}
+
+.caption_text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.light_cointainer {
+  border-color: var(--text-primary-inverted);
+  padding: 4rem 1.6rem;
+  background-color: var(--text-primary-inverted);
+}
+
+.light_cointainer_no_top_padding {
+  padding: 0 1.6rem 4rem 1.6rem;
+  border-color: var(--text-primary-inverted);
+  background-color: var(--text-primary-inverted);
+}
+
+.caption_inverted_text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-primary-inverted);
+  line-height: 1.2rem;
+}
+
+.section_subtitle {
+  padding-left: 1rem;
+  border-left: 1px solid var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-primary);
+  max-width: 533px;
+  margin-bottom: 3.2rem;
+}
+
+.section_subtitle_no_margin {
+  padding-left: 1rem;
+  border-left: 1px solid var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-primary);
+  max-width: 533px;
+  margin: 0;
+}
+
+.panorama {
+  margin: 0 auto;
+  cursor: all-scroll;
+
+  height: 0;
+  padding-bottom: 30%;
+
+  background-image: url('https://flanker.github.io/h5c3/panorama/images/panorama-melbourne-CBD-southbank-yarra-river.jpg');
+  background-size: cover;
+  background-position: 50% 0;
+
+  transition: background-position 1s linear;
+}
+
+@media screen and (max-width: 576px) {
+  .light_cointainer {
+    padding-top: 2rem;
+
+    padding-bottom: 1.6rem;
+  }
+
+  .light_cointainer_no_top_padding {
+    padding-top: 1rem;
+
+    padding-bottom: 1.6rem;
+  }
+
+  .basic-container {
+    padding-bottom: 0.5rem;
+  }
+
+  .caption_inverted_text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    width: 100%;
+  }
+
+  .caption_text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+  }
+
+  .section_subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .section_subtitle_no_margin {
+    font-size: 0.9rem;
+
+    border-left: 1px solid var(--light-gray);
+  }
+}
